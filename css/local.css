@@ -1,0 +1,237 @@
+#devops-services header {
+   content: 'DevOps_Services'; 
+}
+.aclu {
+    background: #005aa9;
+}
+.aclu .logo {
+    display: inline-block;
+    height: 54px;
+    margin: 0;
+    width: auto;
+}
+.aclu a {
+    display: inline-block;
+    width: 100%;
+}
+.blm {
+    background: #000;
+}
+.blm .logo {
+    color: #fff;
+    display: block;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0 auto;
+    padding: .5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 10em;
+}
+.blm .logo::after {
+    background-image: linear-gradient(
+180deg
+,transparent,transparent 6.25%,#fce21b 0,#fce21b 25%,transparent 0,transparent 40.625%,#fce21b 0,#fce21b 59.375%,transparent 0,transparent 75%,#fce21b 0,#fce21b 93.75%,transparent 0,transparent);
+    content: "";
+    height: .75em;
+    left: 0;
+    display: inline-block;
+    position: relative;
+    right: 0;
+    top: 100%;
+    width: 100%;
+}
+.eff {
+}
+.eff a {
+    display: inline-block;
+    width: 100%;
+}
+.eff .logo {
+    display: inline-block;
+    height: 54px;
+    width: auto;
+    margin: 0;
+}
+.company-name:hover .primary,
+.pronouns:hover .primary {
+    display: none;
+}
+.company-name:hover .secondary,
+.pronouns:hover .secondary {
+    display: inline-block;
+}
+.company-name .secondary,
+.pronouns .secondary {
+    display: none;
+}
+.copyright {
+    font-size: .75em;
+}
+.corners {
+    margin: 1em 0;
+    padding: 1em;
+}
+.corners > :first-child,
+.corners > :last-child {
+    position: relative;
+}
+.corners > :first-child:after,
+.corners > :first-child:before,
+.corners > :last-child:after,
+.corners > :last-child:before {
+    border-color: #ddd;
+    border-style: solid;
+    content: '';
+    display: block;
+    height: 1em;
+    margin: -1em;
+    position: absolute;
+    width: 1em;
+}
+.corners > :first-child:after {
+    border-width: 1px 1px 0 0;
+    right: 0;
+    top: 0;
+}
+.corners > :first-child:before {
+    border-width: 1px 0 0 1px;
+    left: 0;
+    top: 0;
+}
+.corners > :last-child:after {
+    border-width: 0 1px 1px 0;
+    bottom: 0;
+    right: 0;
+}
+.corners > :last-child:before {
+    border-width: 0 0 1px 1px;
+    bottom: 0;
+    left: 0;
+}
+.corners:hover > :first-child:after,
+.corners:hover > :first-child:before,
+.corners:hover > :last-child:after,
+.corners:hover > :last-child:before {
+    border-color: #222;
+}
+.corners:hover > header {
+    /* color: #00ff00; */
+}
+.j-random-ascii {
+    animation: colorRotate 32s linear 0s infinite;
+    font-size: calc(1vw * 1.48);
+}
+.logo {
+	margin: 0;
+	position: relative;
+	width: 100%;
+}
+.logo img {
+    /*
+    animation-direction: alternate;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-name: cycle-rgb;
+    animation-timing-function: ease-in;
+    */;
+	height: auto;
+	width: 100%;
+}
+.remote-addr {
+    /* color: #4a4a4a; */
+    /* font-size: .875em; */
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #222;
+}
+a:link {
+}
+a:visited {
+} 
+a:hover {
+    text-decoration: none;
+}
+a:active {
+}
+body {
+    display: flex;
+    flex-direction: column;
+	margin: 0 auto;
+	max-width: 756px;
+}
+body > footer {
+	text-align: center;
+	width: 100%;
+}
+em {
+    font-style: normal;
+    font-weight: 600;
+}
+header {
+    line-height: 1;
+    margin-top: 1em;
+    text-transform: uppercase;
+}
+html {
+	font-family: 'Anonymous Pro', monospace;
+    font-size: 1.125rem;
+	width: 100%;
+}
+html, body {
+    height: 100%;
+}
+main {
+    flex: 1;
+	margin: 0 1em;
+}
+main > h1 {
+    font-size: 1.375em;
+}
+section > header {
+    font-weight: 600;
+}
+ul {
+    list-style-type: '- ';
+}
+@keyframes colorRotate {
+    from {
+        border-color: #6666ff;
+        color: #6666ff;
+    }
+    10% {
+        border-color: #0099ff;
+        color: #0099ff;
+    }
+    50% {
+        border-color: #00ff00;
+        color: #00ff00;
+    }
+    75% {
+        border-color: #ff3399;
+        color: #ff3399;
+    }
+    100% {
+        border-color: #6666ff;
+        color: #6666ff;
+    }
+}
+@keyframes cycle-rgb {
+    from {
+        filter: invert(0%);
+    }
+    to {
+        filter: invert(80%);
+    }
+}
+@media only screen and (min-width: 757px) {
+    .j-random-ascii {
+        font-size: .62rem;
+    }
+	.logo {
+		margin-top: 1em; 
+	}
+}
